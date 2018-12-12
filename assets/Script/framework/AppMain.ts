@@ -53,7 +53,7 @@ class AppMain extends cc.Component {
         await G.wait_time(C.FAKE_DELAY)
         await MPanel.out_fade(this.panel_loading, C.LAODING_FADE_TIME, cc.easeExponentialIn())
         this.panel_loading.active = false
-        MPanel.open('PanelTest')
+        cc.director.loadScene("Game");
     }
 
     /** 游戏主Canvas */
